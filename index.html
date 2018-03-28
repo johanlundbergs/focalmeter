@@ -1,0 +1,53 @@
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+</head>
+<body>
+
+    <div id="wrapper">
+  <div id="menuContainer">
+    <div id="menu">
+      <ul id="menuItems">
+        <li class="menuElement"><div class="lineLeft"></div>INFORMATION <div class="lineRight"></div></li>
+        <li class="menuElement active"><div class="lineLeft"></div>FOCAL LENGTH <div class="lineRight"></div></li>
+        <li class="menuElement"><div class="lineLeft"></div>APERTURE <div class="lineRight"></div></li>
+        <li class="menuElement"><div class="lineLeft"></div>CROP <div class="lineRight"></div></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div id="outerContainer">
+    <div class="container">
+      <div class="imageWrapper">
+      <div id="referenceImageContainer"></div>
+    </div>
+      <div class="slideContainer">
+        <div class="focalWrapper">
+  <span class="focalText" id="focalLength"></span>
+          </div>
+        <input type="range" min="1" max="14" step="1" value="1" class="focalLengthSlider " id="focalLengthSlider">
+        <div id="apertureContainer">
+          <div data="14" class="f1-4 circleDiv"></div>
+          <div data="2" class="f2 circleDiv"></div>
+          <div data="28" class="f2-8 circleDiv"></div>
+          <div data="4" class="f4 circleDiv"></div>
+          <div data="56" class="f5-6 circleDiv"></div>
+          <div data="8" class="f8 circleDiv"></div>
+          <div data="11" class="f11 circleDiv"></div>
+          <div data="16" class="f16 circleDiv"></div>
+        </div>
+        <div class="textBox1">The focal length of an optical system is a measure of how strongly the system converges or diverges light. For an optical system in air, it is the distance over which initially collimated (parallel) rays are brought to a focus. A system with a shorter focal length has greater optical power than one with a long focal length; that is, it bends the rays more sharply, bringing them to a focus in a shorter distance.</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer">
+      <div id="footerPurpleBox"></div>
+  </div>
+
+
+</div>
+  <script src="scripts.js"></script>
+  
+  </body>
